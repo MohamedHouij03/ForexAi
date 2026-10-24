@@ -34,3 +34,6 @@ Thumbs.db
 htmlcov/
 coverage/
 *.log
+
+# GitHub Actions workflows (kept locally only)
+.github/workflows/
