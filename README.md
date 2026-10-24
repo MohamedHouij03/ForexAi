@@ -56,8 +56,44 @@ expectancy. The system therefore keeps its *deployability gate* closed: in `prov
 
 ---
 
+## 🖼 Screenshots
+
+<table>
+  <tr>
+    <td width="50%"><b>Live Assistant</b>: 15-minute chart with EMA 20/50/200 and past signals, the current BUY/SELL/WAIT call, and risk settings</td>
+    <td width="50%"><b>AI Model &amp; Performance</b>: the three models compared per trade after costs, and the final test per instrument</td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/live-assistant.png" alt="Live Assistant dashboard: EUR/USD 15-minute candlestick chart with three moving averages and signal markers, a WAIT signal card with model probabilities, and the paper account's risk configuration"></td>
+    <td><img src="docs/screenshots/model-performance.png" alt="Model page: XGBoost marked not proven, comparison table of Logistic Regression, Random Forest and XGBoost on validation and walk-forward data, and final test results per instrument with log-loss and confusion matrix"></td>
+  </tr>
+  <tr>
+    <td><b>Data validation</b>: every check run on the cleaned EUR/USD dataset, with coverage by year and the largest gaps</td>
+    <td><b>Live track record</b>: paper trades closed by the user next to every AI call, scored automatically against what the market did</td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/data-validation.png" alt="Dataset validation report for EUR/USD 15-minute data: status WARN, 164,138 candles, 98.99% coverage, a table of OK, INFO and WARN checks, and coverage by year from 2020 to 2026"></td>
+    <td><img src="docs/screenshots/track-record.png" alt="Track record panel: paper balance $95.53 from $100, 32 closed trades, 89 AI calls scored with an average of -0.25 R, and tables of closed trades and recent AI calls with their outcomes"></td>
+  </tr>
+  <tr>
+    <td><b>Mobile: Live Assistant</b></td>
+    <td><b>Mobile: AI Model &amp; Performance</b></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/screenshots/live-assistant-mobile.png" width="260" alt="Live Assistant on a phone: watched pairs all on WAIT, EUR/USD last price and market closed, and the start of the chart"></td>
+    <td align="center"><img src="docs/screenshots/model-performance-mobile.png" width="260" alt="Model page on a phone: current XGBoost model, its training, validation and test periods, and the not-proven warning"></td>
+  </tr>
+</table>
+
+<sub>Screenshots show the project's real downloaded market data, trained model and the author's own paper-trading
+record. No example data was added. They were taken on a weekend with the live engine switched off, so the
+market shows as closed and prices are from the last candle.</sub>
+
+---
+
 ## 📚 Table of contents
 
+- [Screenshots](#-screenshots)
 - [Key concepts & terminology](#-key-concepts--terminology)
 - [Data source](#-data-source)
 - [Methodology](#-methodology)
