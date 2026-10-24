@@ -1,0 +1,10 @@
+[project]
+name = "forex-ai-backend"
+version = "0.2.0"
+description = "Machine-learning trading assistant for forex and spot metals - backend (paper trading only)"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+filterwarnings = ["error::FutureWarning"]

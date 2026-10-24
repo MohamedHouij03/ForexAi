@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* Dark trading-dashboard palette. BUY / SELL / WAIT colours are reserved for signals and status. */
+@theme {
+  --color-bg: #0a0d13;
+  --color-panel: #111620;
+  --color-edge: #1e2533;
+  --color-fg: #e6e9ef;
+  --color-muted: #8a93a6;
+  --color-buy: #22c55e;
+  --color-sell: #ef4444;
+  --color-wait: #f59e0b;
+  --color-accent: #3b82f6;
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-fg);
+}
